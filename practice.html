@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="titleott.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+    <title>MY OTT</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        nav{
+            height: 80px;
+            width: 100%;
+            background-color: rgb(224, 131, 65,0.4);
+            backdrop-filter: blur(10px);
+            display: flex;
+            align-items: center;
+            position: fixed ;
+            top: 0px;
+            z-index: 10;
+
+        }
+         
+       .nav-logo img{
+            height: 75px;
+            width: 100px;
+            display: inline;
+            margin: 5px 6px 7px 5px;
+        }
+        nav .nav-items{
+            position: absolute;
+            right: 20px;
+        }
+        .nav-items a{
+            text-decoration: none;
+            font-size: 25px;
+            padding: 15px 5px;
+            color: rgb(47, 202, 230);
+
+        }
+        .nav-items:hover a{
+            color: blanchedalmond;
+            filter: blur(2px);
+           
+        }
+        .nav-items a:hover{
+            color: rgb(15, 14, 14);
+            background-color: rgb(198, 228, 31);
+            filter: blur(0px);
+            border-radius: 20px;
+        }
+       
+        /* a{
+            height: 50px;
+            width: 70px;
+            font-size:50px;
+            font-weight: 500;
+            padding-left: 60px;
+        } */
+        .recent{
+            height: 100px;
+            width: 300px;
+        }
+.carousel-inner img{
+  height: 735px;
+  width: 90%;
+  margin-left: 100px;
+}
+body{
+  background-color: rgb(223, 226, 25);
+}
+h2{
+  background-color: gray;
+  display: inline;
+}
+.frequent-image{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+}
+.frequent-image img{
+margin: 5px;
+height: 150px;
+width: 250px;
+border-radius: 30px;
+}
+.frequent-image img:hover{
+  scale: 1.2;
+  transform: translateY(-5px);
+  filter: drop-shadow(10px);
+  transition: all 5s ease-in-out;
+  border-radius: 10px;
+
+}
+#carouselExampleAutoplaying{
+  margin-top: 60px;
+}
+    </style>
+</head>
+<body background="ott-bg-home.jpg">
+    <nav>
+        <div class="nav-logo">
+            <img src="images/titleott.png" alt="">
+        </div>
+        <div class="nav-items">
+            <a href="#carouselExampleAutoplaying">Home</a>
+            
+            <a href="#freq">Frequently watched</a>
+            <a href="">Recently Added</a>
+            <a href="">Top rated</a>
+            <a href="">Favourite</a>
+            <a href="">About</a>
+            <a href="">Signup/Sigin</a>
+        </div>
+
+    </nav><br>
+    <!-- home section started -->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/carousel-1.png" class="d-block " alt="..." height="700px">
+          </div>
+          <div class="carousel-item">
+            <img src="images/carousel-2.png" class="d-block " alt="..." height="650px">
+          </div>
+          <div class="carousel-item">
+            <img src="images/carousel-3.png" class="d-block " alt="..." height="650px">
+          </div>
+          <div class="carousel-item">
+            <img src="images/carousel-4.png" class="d-block " alt="..." height="650px">
+          </div>
+          <div class="carousel-item">
+            <img src="images/carousel-5.png" class="d-block " alt="..." height="650px">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <!-- home section ended -->
+    <br>
+    <!-- frequent section stated -->
+    <div class="frequent" id="freq">
+      <h2>Frequently watched</h2>
+      <div class="frequent-image" >
+        <img src="images/recommended-1.webp" alt="noimage">
+        <img src="images/recommended-2.webp" alt="noimage">
+        <img src="images/recommended-3.webp" alt="noimage">
+        <img src="images/recommended-4.webp" alt="noimage">
+        <img src="images/recommended-5.webp" alt="noimage">
+        <img src="images/recommended-6.webp" alt="noimage">
+        <img src="images/popular-1.webp" alt="noimage">
+        <img src="images/popular-2.webp" alt="noimage">
+        <img src="images/popular-3.webp" alt="noimage">
+        <img src="images/popular-4.webp" alt="noimage">
+        <img src="images/popular-5.webp" alt="noimage">
+        <img src="images/popular-6.webp" alt="noimage">
+        
+        
+      </div>
+    </div>
+    <!-- frequent section end -->
+    <!-- Recently added section started  -->
+    <div class="recent">
+      
+    </div>
+    <!-- Recently added section ended  -->
+    
+
+</body>
+</html>
